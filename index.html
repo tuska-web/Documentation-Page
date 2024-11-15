@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>C++ Technical Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Syntax">Syntax</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Classes">Classes</a>
+        <a class="nav-link" href="#Pointers">Pointers</a>
+        <a class="nav-link" href="#Standard_Template_Library_(STL)">Standard Template Library (STL)</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>C++ is a powerful general-purpose programming language that supports procedural, object-oriented, and generic programming. It is widely used for system/software development, game development, and real-time systems.</p>
+            <p>This documentation provides an overview of C++ features and syntax.</p>
+        </section>
+        <section id="Syntax" class="main-section">
+            <header>Syntax</header>
+            <p>C++ syntax is similar to C but includes object-oriented features. The basic structure of a C++ program is as follows:</p>
+            <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>C++ supports various data types, including:</p>
+            <ul>
+                <li><strong>int:</strong> Represents integers.</li>
+                <li><strong>float:</strong> Represents floating-point numbers.</li>
+                <li><strong>double:</strong> Represents double-precision floating-point numbers.</li>
+                <li><strong>char:</strong> Represents single characters.</li>
+                <li><strong>bool:</strong> Represents boolean values (true or false).</li>
+            </ul>
+        </section>
+        <section id="Control_Structures" class="main-section">
+            <header>Control Structures</header>
+            <p>C++ supports various control structures such as if-else, switch-case, for loops, while loops, and do-while loops. Example of a for loop:</p>
+            <pre><code class="language-cpp">
+for (int i = 0; i &lt; 10; i++) {
+    cout &lt;&lt; i &lt;&lt; " ";
+}
+            </code></pre>
+        </section>
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>Functions allow you to encapsulate code and reuse it. Example of a function:</p>
+            <pre><code class="language-cpp">
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int sum = add(5, 3);
+    cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; endl;
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="Classes" class="main-section">
+            <header>Classes</header>
+            <p>Classes are the foundation of object-oriented programming in C++. They allow you to define your own data types and include both data (attributes) and functions (methods) that operate on the data. Example of a class:</p>
+            <pre><code class="language-cpp">
+class Rectangle {
+public:
+    int width, height;
+
+    Rectangle(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    int area() {
+        return width * height;
+    }
+};
+
+int main() {
+    Rectangle rect(10, 5);
+    cout &lt;&lt; "Area: " &lt;&lt; rect.area() &lt;&lt; endl;
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="Pointers" class="main-section">
+            <header>Pointers</header>
+            <p>Pointers are a powerful feature in C++ that allow you to directly access memory and manipulate addresses. Example of using pointers:</p>
+            <pre><code class="language-cpp">
+int main() {
+    int var = 5;
+    int *ptr = &var;  // Pointer to var
+
+    cout &lt;&lt; "Value of var: " &lt;&lt; var &lt;&lt; endl;
+    cout &lt;&lt; "Address of var: " &lt;&lt; ptr &lt;&lt; endl;
+    cout &lt;&lt; "Value at address ptr: " &lt;&lt; *ptr &lt;&lt; endl;
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="Standard_Template_Library_(STL)" class="main-section">
+            <header>Standard Template Library (STL)</header>
+            <p>The Standard Template Library (STL) is a powerful library in C++ that provides a wide range of generic classes and functions, such as vectors, lists, and algorithms. Example of using a vector from the STL:</p>
+            <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+    vector&lt;int&gt; vec = {1, 2, 3, 4, 5};
+
+    // Iterate and print values
+    for(int i : vec) {
+        cout &lt;&lt; i &lt;&lt; " ";
+    }
+
+    return 0;
+}
+            </code></pre>
+        </section>
+        <section id="Conclusion" class="main-section">
+            <header>Conclusion</header>
+            <p>C++ is a versatile and powerful programming language that provides a range of features for system programming, application development, and more. Its support for object-oriented programming, generic programming through templates, and robust standard library makes it a go-to language for many complex and performance-critical applications. With a solid understanding of C++'s syntax, data types, control structures, functions, classes, pointers, and the Standard Template Library (STL), you can develop efficient and effective software solutions.</p>
+        </section>
+    </main>
+</body>
+</html>
